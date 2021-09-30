@@ -12,12 +12,13 @@ end
 
 Vagrant::Config.run do |config|
   config.vm.box = "ubuntu/xenial64"
-  config.vm.host_name = "sf_practice_6" 
-
+  config.vm.host_name = "sfpractice6" 
+  
+  config.vm.provision "file", source: "requirements.txt", destination: "requirements.txt"
+  config.vm.provision "file", source: "run.sh", destination: "run.sh"
   config.vm.share_folder "bootstrap", "/mnt/bootstrap", ".", :create => true
   config.vm.provision :shell, :path => "bootstrap.sh"
-  config.vm.provision "file", source: "~/requirements.txt", destination: "requirements.txt"
-  config.vm.provision "file", source: "~/run.sh", destination: "run.sh"
+
   
   # SSH Server port forwarding
   config.vm.forward_port 22, 2222

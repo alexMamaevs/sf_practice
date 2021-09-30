@@ -1,0 +1,11 @@
+#!/bin/sh -e
+export DEBIAN_FRONTEND=noninteractive
+
+PROVISIONED_ON=/etc/vm_provision_on_timestamp
+if [ -f "$PROVISIONED_ON" ]
+then
+  echo "VM was already provisioned at: $(cat $PROVISIONED_ON)"
+  echo "To run system updates manually login via 'vagrant ssh' and run 'apt-get update && apt-get upgrade'"
+  echo ""
+  exit
+fi

@@ -18,4 +18,3 @@ apt-get -y install "python3" "python3-pip"
 
 # Install python3 package
 pip install --upgrade pip
-pip3 install -r requirements.txt 

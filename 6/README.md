@@ -25,7 +25,7 @@ Then, run the following to create a new Python 3 app dev virtual machine:
 ### What does it do?
 
 It creates a virtual server running Ubuntu 18.04 with the version of Python 3 installed. 
-Edit the appRun.sh file to run Python app.
+Edit the run.sh file to run Python app.
 
 Once it has started up it will print out how to access virtual machine. 
 It will look something like this:
@@ -33,9 +33,11 @@ It will look something like this:
     $ vagrant up
     Bringing machine 'default' up with 'virtualbox' provider...
 
-    Admin access to postgres user via VM:
+    Admin access user via VM:
       vagrant ssh
-
-
-### Если возникла ошибка при загрузке vagrant box, выполните команду
+	
+	The local project directory is translated to the virtual machine directory /mnt/MyApp
+	You can connect to Django via http on the default port 8000 (http://localhost:8000)
+	
+### If there was an error loading the vagrant box, run the command
 	vagrant box add --insecure ubuntu/bionic64

@@ -14,7 +14,8 @@ fi
 apt-get update
 apt-get -y upgrade
 
+# Install package
 apt-get -y install "python3" "python3-pip"
 
 # Install python3 package
-pip install --upgrade pip
+apt-get -y install "python3-psycopg2" "python3-django"

@@ -1,12 +1,12 @@
 ### What is it?
 
-A Vagrant configuration that starts up a PostgreSQL database in a virtual machine for local application development.
+A Vagrant configuration that starts up a Python 3 project in a virtual machine for local application development.
 
 ### Installation
 
 First install [Vagrant] and [Virtual Box].
 
-Then, run the following to create a new PostgreSQL app dev virtual machine:
+Then, run the following to create a new Python 3 app dev virtual machine:
 
 ### Usage
 

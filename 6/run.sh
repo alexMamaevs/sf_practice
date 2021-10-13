@@ -1,4 +1,4 @@
 #!/bin/sh -e
 export DEBIAN_FRONTEND=noninteractive
-pip3 install -r /mnt/MyApp/App/requirements.txt
-python3  /mnt/MyApp/App/app.py
+pip3 install -r /mnt/MyProject/App/requirements.txt
+python3  /mnt/MyProject/App/app.py

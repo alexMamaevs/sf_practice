@@ -36,7 +36,7 @@ It will look something like this:
     Admin access user via VM:
       vagrant ssh
 	
-	The local project directory is translated to the virtual machine directory /mnt/MyProject
+	The local project directory is mount to the virtual machine directory /mnt/MyProject
 	You can connect to Django via http on the default port 8000 (http://localhost:8000)
 	
 ### If there was an error loading the vagrant box, run the command
